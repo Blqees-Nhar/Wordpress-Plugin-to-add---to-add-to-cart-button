@@ -14,8 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_enqueue_scripts', 'quantity_buttons_scripts' );
 
 function quantity_buttons_scripts() {
-    wp_enqueue_script( 'quantity-buttons', plugins_url( '/js/quantity-buttons.js', __FILE__ ), array( 'jquery' ), '1.0', true );
-    wp_enqueue_style( 'quantity-buttons-css', plugins_url( '/css/quantity-buttons.css', __FILE__ ) );
+    wp_enqueue_script( 'quantity-buttons', plugins_url( 'quantity-buttons.js', __FILE__ ), array( 'jquery' ), '1.0', true );
+    wp_enqueue_style( 'quantity-buttons-css', plugins_url( 'quantity-buttons.css', __FILE__ ) );
 }
 
 // Add + and - buttons to quantity input on product pages and loop
